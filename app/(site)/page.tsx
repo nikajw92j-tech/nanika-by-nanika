@@ -6,7 +6,6 @@ import { Marquee } from '@/components/animations/Marquee';
 import { Stagger, StaggerItem } from '@/components/animations/Reveal';
 import { ProductCard } from '@/components/products/ProductCard';
 import { AboutShort } from '@/components/sections/AboutShort';
-import { BeforeAfter } from '@/components/sections/BeforeAfter';
 import { Categories } from '@/components/sections/Categories';
 import { CtaBanner } from '@/components/sections/CtaBanner';
 import { GalleryPreview } from '@/components/sections/GalleryPreview';
@@ -34,21 +33,28 @@ export default async function HomePage() {
 
   const featuredGallery = gallery.filter((g) => g.featured);
   const previewSource = (featuredGallery.length ? featuredGallery : gallery).slice(0, 12);
-  // მინიმუმ 8 უჯრა — დანარჩენი ბრენდის ფერის placeholder-ია (TODO: დაამატე ფოტოები)
-  const preview = [
-    ...previewSource.map((g) => ({ id: g.id, url: g.url, title: tr(g.title, locale) })),
-    ...Array.from({ length: Math.max(0, 8 - previewSource.length) }, (_, i) => ({
-      id: `ph-${i}`,
-      url: null,
-      title: '',
-    })),
-  ];
+  const preview = previewSource.map((g) => ({ id: g.id, url: g.url, title: tr(g.title, locale) }));
 
+  // კატეგორია, რომელსაც ჯერ საკუთარი ფოტო არ აქვს, იღებს ატელიეს/ბრენდის ფოტოს
+  // (TODO: დაამატე ფოტოები გალერეაში შესაბამისი კატეგორიით — მაშინ ავტომატურად ჩანაცვლდება)
+  const brandPhotos = [
+    '/images/about/atelier.webp',
+    '/images/about/labels.webp',
+    '/images/about/process.webp',
+    '/images/about/label-detail.webp',
+  ];
+  let fallback = 0;
   const categoryCards = categories.slice(0, 7).map((c) => ({
     slug: c.slug,
     name: tr(c.name, locale),
-    image: c.image_url ?? gallery.find((g) => g.category_slug === c.slug)?.url ?? null,
+    image:
+      c.image_url ??
+      gallery.find((g) => g.category_slug === c.slug)?.url ??
+      brandPhotos[fallback++ % brandPhotos.length],
   }));
+  // სოც. ქსელის ბლოკი — 6 უჯრა, არსებული ფოტოებით
+  const feedSource = [...gallery.map((g) => ({ url: g.url, alt: tr(g.title, locale) || 'Nanika' })), ...brandPhotos.map((url) => ({ url, alt: 'Nanika' }))];
+  const feed = Array.from(new Map(feedSource.map((f) => [f.url, f])).values()).slice(0, 6);
 
   const featuredProducts = products.filter((p) => p.featured).slice(0, 4);
   const promoProducts = products.filter((p) => p.discountPercent).slice(0, 4);
@@ -122,15 +128,6 @@ export default async function HomePage() {
         placeholderLabel={dict.common.photoSoon}
       />
       <StitchLine />
-      <BeforeAfter
-        eyebrow={dict.beforeAfter.eyebrow}
-        title={dict.beforeAfter.title}
-        subtitle={dict.beforeAfter.subtitle}
-        beforeLabel={dict.beforeAfter.before}
-        afterLabel={dict.beforeAfter.after}
-        hint={dict.beforeAfter.hint}
-        pairs={content.beforeAfter.pairs.map((p) => ({ ...p, caption: tr(p.caption, locale) }))}
-      />
       <Stats
         eyebrow={dict.stats.eyebrow}
         items={content.stats.items.map((s) => ({ ...s, label: tr(s.label, locale) }))}
@@ -148,7 +145,7 @@ export default async function HomePage() {
         facebookLabel={dict.social.facebook}
         facebook={content.social.facebook}
         instagram={content.social.instagram}
-        images={gallery.slice(0, 6).map((g) => ({ url: g.url, alt: tr(g.title, locale) || 'Nanika' }))}
+        images={feed}
       />
       <StitchLine flip className="mb-8" />
       <CtaBanner

@@ -12,6 +12,8 @@ const files: { file: string; title?: string; width: number; height: number }[] =
   { file: 'kostiumi-01.webp', title: 'წითელი კოსტიუმი', width: 206, height: 206 },
   { file: 'kostiumi-02.webp', title: 'ჟაკეტი ატელიეში', width: 206, height: 206 },
   { file: 'sportuli-01.webp', title: 'ჰუდი ქართული დროშით', width: 206, height: 206 },
+  { file: 'brendi-01.webp', title: 'Nanika — Made in Georgia', width: 206, height: 206 },
+  { file: 'brendi-02.webp', title: 'Nanika ბირკა', width: 206, height: 206 },
 ];
 
 /** ფაილის სახელის პრეფიქსიდან კატეგორიის დადგენა: kaba-01.webp → kaba */

@@ -131,7 +131,6 @@ export const contentSchemas = {
   faq: z.object({ items: z.array(z.object({ q: L, a: localized(4000) })).max(50) }),
   stats: z.object({ items: z.array(z.object({ value: z.coerce.number().min(0).max(1e7), suffix: z.string().max(5), label: L })).max(6) }),
   reviews: z.object({ items: z.array(z.object({ name: z.string().trim().min(1).max(80), text: localized(1500), source: z.string().max(60) })).max(50) }),
-  beforeAfter: z.object({ pairs: z.array(z.object({ before: imageUrl, after: imageUrl, caption: L })).max(10) }),
   settings: z.object({
     storeName: z.string().trim().min(1).max(80),
     currency: z.literal('GEL'),

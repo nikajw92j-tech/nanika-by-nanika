@@ -32,7 +32,6 @@ export type SiteContent = {
   faq: { items: { q: L; a: L }[] };
   stats: { items: { value: number; suffix: string; label: L }[] };
   reviews: { items: { name: string; text: L; source: string }[] };
-  beforeAfter: { pairs: { before: string; after: string; caption: L }[] };
   settings: {
     storeName: string;
     currency: 'GEL';
@@ -52,7 +51,6 @@ export const CONTENT_KEYS: ContentKey[] = [
   'faq',
   'stats',
   'reviews',
-  'beforeAfter',
   'settings',
 ];
 
@@ -72,7 +70,7 @@ export function defaultContent(): SiteContent {
       text: pick((d) => d.aboutShort.text),
       story: pick((d) => d.about.story),
       image: '/images/about/atelier.webp',
-      designerImage: '', // TODO: დიზაინერის ფოტო
+      designerImage: '/images/about/process.webp', // TODO: ჩაანაცვლე დიზაინერის ფოტოთი (ადმინი → კონტენტი)
     },
     contact: {
       phone: siteConfig.phone,
@@ -120,7 +118,6 @@ export function defaultContent(): SiteContent {
       })),
     },
     reviews: { items: [] }, // ⚠️ მხოლოდ რეალური შეფასებები — დაამატე ადმინიდან
-    beforeAfter: { pairs: [] }, // TODO: ინსპირაცია → შედეგი ფოტოები
     settings: {
       storeName: siteConfig.name,
       currency: 'GEL',

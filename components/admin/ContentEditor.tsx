@@ -218,30 +218,6 @@ function ReviewsEditor({ initial }: { initial: SiteContent['reviews'] }) {
   );
 }
 
-function BeforeAfterEditor({ initial }: { initial: SiteContent['beforeAfter'] }) {
-  const { value: v, setValue: set, save, pending } = useSection('beforeAfter', initial);
-  return (
-    <SectionCard title="ინსპირაცია → შედეგი" hint="წყვილი ფოტო: კლიენტის ინსპირაცია და შეკერილი ნაწარმი" onSave={save} pending={pending}>
-      <ListEditor
-        items={v.pairs}
-        onChange={(pairs) => set({ pairs })}
-        make={() => ({ before: '', after: '', caption: {} })}
-        title={(p, i) => ka(p.caption) || `წყვილი ${i + 1}`}
-        addLabel="წყვილის დამატება"
-        render={(p, setP) => (
-          <>
-            <div className="grid grid-cols-2 gap-3">
-              <SingleImageField label="ინსპირაცია" value={p.before} onChange={(before) => setP({ ...p, before })} />
-              <SingleImageField label="შედეგი" value={p.after} onChange={(after) => setP({ ...p, after })} />
-            </div>
-            <LocalizedField label="წარწერა" value={p.caption} onChange={(caption) => setP({ ...p, caption })} />
-          </>
-        )}
-      />
-    </SectionCard>
-  );
-}
-
 export function ContactEditor({ initial }: { initial: SiteContent['contact'] }) {
   const { value: v, setValue: set, save, pending } = useSection('contact', initial);
   return (
@@ -377,7 +353,6 @@ const TABS = [
   { id: 'faq', label: 'FAQ' },
   { id: 'reviews', label: 'შეფასებები' },
   { id: 'stats', label: 'რიცხვები' },
-  { id: 'beforeAfter', label: 'ინსპირაცია → შედეგი' },
   { id: 'categories', label: 'კატეგორიები' },
   { id: 'contact', label: 'კონტაქტი' },
   { id: 'social', label: 'სოც. ქსელები' },
@@ -404,7 +379,6 @@ export function ContentEditor({ content, categories, initialTab }: { content: Si
         {tab === 'faq' && <FaqEditor initial={content.faq} />}
         {tab === 'reviews' && <ReviewsEditor initial={content.reviews} />}
         {tab === 'stats' && <StatsEditor initial={content.stats} />}
-        {tab === 'beforeAfter' && <BeforeAfterEditor initial={content.beforeAfter} />}
         {tab === 'categories' && <CategoriesManager categories={categories} />}
         {tab === 'contact' && <ContactEditor initial={content.contact} />}
         {tab === 'social' && <SocialEditor initial={content.social} />}
