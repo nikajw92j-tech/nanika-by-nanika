@@ -1,0 +1,301 @@
+{
+  "_TODO": "Texts marked [TODO] need real information — edit here or in the admin panel (/admin/content).",
+  "meta": {
+    "title": "Nanika by Nanika — Custom tailoring to your design",
+    "description": "We sew any garment to your chosen design and your exact measurements. Orders accepted across Georgia. Made in Georgia."
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Portfolio",
+    "products": "Collection",
+    "services": "Services",
+    "howToOrder": "How to order",
+    "about": "About",
+    "contact": "Contact",
+    "order": "Order",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to main content"
+  },
+  "common": {
+    "viewAll": "View all",
+    "orderNow": "Order now",
+    "order": "Order",
+    "viewDetails": "Details",
+    "view": "View",
+    "wantThis": "I want this",
+    "backHome": "Back to home",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "messenger": "Messenger",
+    "form": "Order form",
+    "from": "from",
+    "days": "days",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Previous",
+    "close": "Close",
+    "toTop": "Back to top",
+    "all": "All",
+    "search": "Search",
+    "loading": "Loading...",
+    "comingSoon": "Coming soon",
+    "photoSoon": "Photo coming soon",
+    "contactUs": "Message us",
+    "scroll": "Scroll"
+  },
+  "hero": {
+    "eyebrow": "Custom tailoring · Made in Georgia",
+    "title": "Your style. Your size. Your design.",
+    "subtitle": "We sew any garment to your chosen design — orders accepted all across Georgia.",
+    "ctaOrder": "Order now",
+    "ctaGallery": "See our work"
+  },
+  "marquee": ["Custom tailoring", "Your measurements", "Your design", "Delivery across Georgia"],
+  "aboutShort": {
+    "eyebrow": "About us",
+    "title": "Every stitch — for you",
+    "text": "Nanika is a Georgian brand where clothes are made for one person — you. Bring us an idea, a photo or a sketch, and we will tailor it precisely to your measurements. [TODO: founder's short story — 2–3 sentences]",
+    "signature": "— Nanika",
+    "cta": "Learn more"
+  },
+  "categories": {
+    "eyebrow": "What we sew",
+    "title": "Any design, made to your size",
+    "subtitle": "Categories [TODO: confirm what you sew]"
+  },
+  "why": {
+    "eyebrow": "Why Nanika",
+    "title": "Details that make the difference",
+    "items": [
+      { "title": "Made to measure", "text": "Every piece is sewn to your exact measurements — not a standard size chart." },
+      { "title": "Any design from a photo", "text": "Send a photo, sketch or inspiration — we will make it real." },
+      { "title": "Quality fabrics", "text": "Together we choose the fabric and colour that suit your style and occasion." },
+      { "title": "Delivery across Georgia", "text": "Order online and we deliver the finished piece to your door." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "Five steps to your garment",
+    "steps": [
+      { "title": "Send us the design", "text": "A photo, sketch or link — anything works." },
+      { "title": "Tell us your measurements", "text": "Our guide makes measuring at home easy." },
+      { "title": "Choose fabric and colour", "text": "We recommend the best option for the design and season." },
+      { "title": "We sew", "text": "Carefully, by hand, with attention to every detail." },
+      { "title": "Delivery to you", "text": "Your finished piece is delivered anywhere in Georgia." }
+    ]
+  },
+  "galleryPreview": {
+    "eyebrow": "Portfolio",
+    "title": "Sewn with love",
+    "cta": "All work"
+  },
+  "featured": {
+    "eyebrow": "Collection",
+    "title": "Featured pieces",
+    "cta": "Full collection"
+  },
+  "beforeAfter": {
+    "eyebrow": "Inspiration → Result",
+    "title": "Your idea, our hands",
+    "subtitle": "Left — the inspiration a client sent. Right — the piece Nanika sewed.",
+    "before": "Inspiration",
+    "after": "Result",
+    "hint": "Drag"
+  },
+  "stats": {
+    "eyebrow": "In numbers",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "Custom-made" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What clients say",
+    "placeholder": "[TODO: real client reviews from Facebook will appear here]",
+    "items": []
+  },
+  "social": {
+    "eyebrow": "@nanikabynanika",
+    "title": "Follow us on social media",
+    "facebook": "Follow us on Facebook",
+    "instagram": "Instagram"
+  },
+  "cta": {
+    "title": "Have a design in mind?",
+    "text": "Send it to us and we will sew it!"
+  },
+  "footer": {
+    "description": "Custom tailoring to your chosen design. Orders accepted across Georgia.",
+    "menu": "Menu",
+    "contact": "Contact",
+    "hours": "Working hours",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "admin": "Admin"
+  },
+  "info": {
+    "address": "Online only — orders across Georgia",
+    "hours": "Mon–Sat 10:00–19:00 [TODO]",
+    "delivery": "Tbilisi 1–2 days, regions 2–4 days [TODO]",
+    "sewingTime": "5–10 working days [TODO]",
+    "priceFrom": "Price is individual"
+  },
+  "gallery": {
+    "title": "Portfolio",
+    "subtitle": "Work from our atelier — every piece sewn for a specific person.",
+    "empty": "No work in this category yet.",
+    "placeholder": "A new piece will be added here soon"
+  },
+  "products": {
+    "title": "Collection",
+    "subtitle": "Choose a design and order it in a standard size or your own measurements.",
+    "search": "Search designs...",
+    "sort": "Sort",
+    "sortNew": "Newest",
+    "sortAsc": "Price: low to high",
+    "sortDesc": "Price: high to low",
+    "colors": "Colours",
+    "color": "Colour",
+    "size": "Size",
+    "fabric": "Fabric",
+    "productionTime": "Production time",
+    "customSize": "Sew to my measurements",
+    "customSizeText": "You will enter measurements and upload photos in the order form.",
+    "related": "You may also like",
+    "inStock": "In stock",
+    "madeToOrder": "Made to order",
+    "outOfStock": "Sold out",
+    "new": "New",
+    "sale": "Sale",
+    "description": "Description",
+    "empty": "The collection is coming soon. Meanwhile, you can order any design from a photo.",
+    "noResults": "Nothing found."
+  },
+  "services": {
+    "eyebrow": "Services & prices",
+    "title": "What we offer",
+    "subtitle": "Approximate prices and lead times. We confirm the exact price based on design and fabric.",
+    "price": "Price",
+    "time": "Lead time",
+    "items": [
+      { "title": "Dresses", "text": "Everyday and business dresses to your design.", "price": "from [TODO] ₾", "time": "5–10 days [TODO]" },
+      { "title": "Evening dresses", "text": "For special occasions — with refined details.", "price": "from [TODO] ₾", "time": "[TODO]" },
+      { "title": "Suits", "text": "Jackets, waistcoats and sets with a precise fit.", "price": "from [TODO] ₾", "time": "[TODO]" },
+      { "title": "Skirts & trousers", "text": "Classic and modern silhouettes.", "price": "from [TODO] ₾", "time": "[TODO]" },
+      { "title": "Blouses", "text": "Light, elegant blouses in any fabric.", "price": "from [TODO] ₾", "time": "[TODO]" },
+      { "title": "Sportswear & national wear", "text": "Hoodies, uniforms and Georgian motifs.", "price": "from [TODO] ₾", "time": "[TODO]" }
+    ],
+    "extrasTitle": "Additional services",
+    "extras": [
+      { "title": "Alterations", "text": "[TODO: confirm if offered] — adjusting garments you already own." },
+      { "title": "Fabric selection", "text": "We help you choose fabric by design and budget." },
+      { "title": "Express order", "text": "[TODO: terms and price, if available]" }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      { "q": "How do I take my measurements?", "a": "Use our measurement guide on the “How to order” page. All you need is a tape measure and 5 minutes. If anything is unclear, message us and we will help." },
+      { "q": "How long does it take?", "a": "Average production time is 5–10 working days [TODO]. We confirm the exact time based on the design." },
+      { "q": "How do I pay?", "a": "[TODO: payment terms — e.g. bank transfer, deposit]. We agree on the details when confirming your order." },
+      { "q": "How much is delivery?", "a": "[TODO: delivery price]. We deliver across Georgia: Tbilisi 1–2 days, regions 2–4 days [TODO]." },
+      { "q": "Can I use my own fabric?", "a": "[TODO: confirm] Message us and we will check whether the fabric suits the design." },
+      { "q": "What if it doesn't fit?", "a": "[TODO: return/alteration policy] Contact us and we will find a solution together." }
+    ]
+  },
+  "howTo": {
+    "eyebrow": "How to order",
+    "title": "Simple, step by step",
+    "subtitle": "Ordering takes just a few minutes — we take care of the rest.",
+    "guideEyebrow": "Measurement guide",
+    "guideTitle": "How to measure correctly",
+    "guideSubtitle": "Tap or hover over a point to see where and how to measure.",
+    "tips": "Tip: measure over thin clothing; keep the tape snug but not tight.",
+    "points": [
+      { "id": "bust", "name": "Bust", "text": "Measure around the fullest part of the bust, keeping the tape horizontal across the back." },
+      { "id": "waist", "name": "Waist", "text": "Measure at the narrowest part of the waist, just above the navel." },
+      { "id": "hips", "name": "Hips", "text": "Measure around the widest part of the hips, feet together." },
+      { "id": "shoulders", "name": "Shoulder width", "text": "From one shoulder edge to the other, across the back." },
+      { "id": "sleeve", "name": "Sleeve length", "text": "From the shoulder edge to the wrist, arm slightly bent." },
+      { "id": "length", "name": "Garment length", "text": "From the highest point of the shoulder to the desired length." },
+      { "id": "height", "name": "Height", "text": "Barefoot, against a wall, from head to floor." }
+    ]
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Handmade, tailored to you",
+    "story": "Nanika by Nanika is a Georgian brand that creates clothing individually. For us, every order is its own story: your idea, your measurements, your style. [TODO: founder's story — who, when and why]",
+    "designerCaption": "Designer [TODO: name and photo]",
+    "philosophyTitle": "Philosophy",
+    "philosophy": [
+      { "title": "People first", "text": "Clothes should fit the person — not the other way round." },
+      { "title": "Handcraft", "text": "Every stitch made with care, never rushed." },
+      { "title": "Made in Georgia", "text": "Created in Georgia — with pride." }
+    ],
+    "timelineTitle": "Our journey",
+    "timeline": [
+      { "year": "[TODO]", "title": "The idea", "text": "The brand is born [TODO: year and story]." },
+      { "year": "[TODO]", "title": "First orders", "text": "[TODO]" },
+      { "year": "[TODO]", "title": "The Nanika label", "text": "Our own brand label — Made in Georgia." },
+      { "year": "Today", "title": "All of Georgia", "text": "We take orders online, across the whole country." }
+    ],
+    "processTitle": "From the atelier"
+  },
+  "order": {
+    "eyebrow": "Order / Contact",
+    "title": "Let's sew your design",
+    "subtitle": "Fill in the form and we will contact you within 24 hours [TODO: confirm]. Or message us directly.",
+    "quick": "Quick contact",
+    "steps": ["Design", "Photos", "Measurements", "Details", "Contact"],
+    "stepOf": "Step {n} of {total}",
+    "selectedModel": "Selected design",
+    "category": "What would you like sewn?",
+    "photos": "Upload photos of the design",
+    "photosHint": "Drop photos here or click to choose · max 5 photos",
+    "photosOptional": "Photos are optional if you already chose a design.",
+    "remove": "Remove",
+    "measurements": "Your measurements (cm)",
+    "measureLater": "I'll send measurements later",
+    "guideLink": "How do I measure?",
+    "color": "Colour / fabric",
+    "colorPlaceholder": "e.g. black, satin",
+    "size": "Size",
+    "sizeCustom": "My measurements",
+    "desiredDate": "Desired date",
+    "comment": "Comment",
+    "commentPlaceholder": "Tell us details: length, sleeves, occasion...",
+    "name": "Name",
+    "phone": "Phone",
+    "city": "City",
+    "contactMethod": "How should we contact you?",
+    "methods": { "phone": "Phone", "whatsapp": "WhatsApp", "messenger": "Messenger" },
+    "submit": "Send order",
+    "sending": "Sending...",
+    "successTitle": "Thank you!",
+    "successText": "We received your order and will contact you soon to confirm the details.",
+    "orderNumber": "Order number",
+    "newOrder": "New order",
+    "errorTitle": "Couldn't send",
+    "errorText": "Please try again or message us on WhatsApp.",
+    "errors": {
+      "required": "This field is required",
+      "name": "Enter your name (min. 2 characters)",
+      "phone": "Enter a valid phone number",
+      "city": "Enter your city",
+      "category": "Choose a category",
+      "number": "Enter a number (cm)",
+      "fileType": "Only JPG, PNG, WEBP photos are allowed",
+      "fileSize": "Photo is too large (max 10 MB)",
+      "tooMany": "Maximum 5 photos",
+      "measurements": "Fill in bust, waist and hips or tick “later”"
+    },
+    "questionTitle": "Have a question?",
+    "questionText": "Leave a message and we will reply.",
+    "message": "Message",
+    "send": "Send",
+    "questionSent": "Message sent. Thank you!"
+  },
+  "notFound": {
+    "title": "We haven't sewn this page yet 🧵",
+    "text": "Looks like this seam came undone. Go back home or browse our work."
+  }
+}
